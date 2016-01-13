@@ -1,0 +1,190 @@
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 650px) {
+
+#home-screen {
+  position: relative;
+}
+#header-headlines {
+  font-size: 1.7em;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 50% !important;
+  animation: mymove 0s ease-in;
+  -webkit-animation: mymove 0s ease-in 1;
+  -moz-animation: mymove 0s ease-in 1;
+  -o-animation: mymove 0s ease-in 1;
+  -ms-animation: mymove 0s ease-in 1;
+}
+#header-headlines p {
+  line-height: .90em;
+}
+.hi-icon-wrap {
+  display: none;
+}
+#navigation-name {
+  display: none;
+}
+.navigation-wrapper span {
+  padding-right: 5px;
+  font-size: 0.9em;
+}
+.arrow {
+  bottom: 10px;
+}
+#main {
+  background: none ;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#content, #content1, #content2, #content3 #content5 {
+  background-image: none;
+  padding: 100px 0px 100px 0px !important;
+}
+#about, #resume, #work, #contact, #selection-download {
+  width: 85%;
+  margin: 0 auto;
+}
+#headlines-about {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+#headlines-about1 {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+#headlines-resume {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+#headlines-portfolio {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+#headlines-contact {
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+#content img {
+  display: none;
+}
+#about-me-box {
+  width: 100%;
+}
+#about-me-box1 {
+  width: 100%;
+}
+#line-1 {
+  margin-top: 25px;
+}
+#resume-box {
+  width: 100%;
+}
+.icons {
+  margin-top: -6px;
+}
+.company {
+  line-height: 17px;
+}
+.year {
+  display: none;
+}
+#gallery {
+  width: 100%;
+}
+#filter {
+  display: none;
+ }
+#Grid li {
+  float: none;
+}
+.headlines div {
+  padding-bottom: 35px;
+  margin-top: -15px;
+}
+.input, textarea {
+  width: 100%;
+}
+#submit {
+  padding: 15px !important;
+  border: 0px !important;
+  background-color: ##a8a7a6;
+  color: #f2f2f2;
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+  outline: none !important;
+  border-radius: 0 !important;
+}
+#success {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#download {
+  display: none;
+}
+#socila-complet {
+  width: 100%;
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+
+#header-headlines {
+  font-size: 3.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 50% !important;
+  animation: mymove 0s ease-in;
+  -webkit-animation: mymove 0s ease-in 1;
+  -moz-animation: mymove 0s ease-in 1;
+  -o-animation: mymove 0s ease-in 1;
+  -ms-animation: mymove 0s ease-in 1;
+}
+#navigation-name {
+  padding-right: 5%;
+}
+.hi-icon-wrap {
+  top: 55% !important;
+  animation: mymove 0s ease-in;
+  -webkit-animation: mymove 0s ease-in 1;
+  -moz-animation: mymove 0s ease-in 1;
+  -o-animation: mymove 0s ease-in 1;
+  -ms-animation: mymove 0s ease-in 1;
+}
+#header-headlines {
+  top: 50%;
+}
+/*#about, #resume, #work, #contact, #selection-download {
+  padding-left: 20px;
+  width: 127%;
+}*/
+#about-me-box, #resume-box, #gallery, #about-me-box1  {
+  width: 33%;
+}
+#line-1 {
+  margin-top: 25px;
+}
+#content img {
+  margin-top: 38px;
+}
+.input, textarea {
+  width:100%;
+}
+
+}
+

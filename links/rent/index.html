@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+         <script src="js/backgroundsize.min.htc"></script>
+        <title>Animated</title>
+        <link href="css/main.css" rel="stylesheet">
+
+        <link href="css/animate.css" rel="stylesheet">
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sp').first().addClass('active');
+             $('.sp0').first().addClass('active');
+              $('.sp2').first().addClass('active');
+            $("#line a").first().addClass("active-link");
+            $("#line-next a").first().addClass("active-link");
+            $('.sp').hide();
+            $('.sp0').hide();
+              $('.sp2').hide();
+            $('.active').show();
+
+
+            $('#button-next').click(function(){
+                $('.sp.active').removeClass('active').addClass('oldActive');
+                $('#line a.active-link').removeClass('active-link').addClass('old-link');
+                    if ($('.sp.oldActive').is(':last-child')) {
+                        $('.sp').first().addClass('active');
+                        /*$("#line a").removeClass("active-link");*/
+                        $("#line a").first().addClass("active-link");
+                         $("#line a").last().addClass("old-link");
+                    }else{
+                        $('.sp.oldActive').next().addClass('active');
+                         $("#line a.active-link").addClass("old-link");
+                        $("#line a.active-link").removeClass('active-link');
+                        $("#line a.old-link").next().addClass("active-link");
+                    }
+                    $('.sp.oldActive').removeClass('oldActive');
+                    $('#line a.old-link').removeClass('old-link');
+                    $('.sp').fadeOut();
+                    $('.sp.active').fadeIn();
+            });
+
+
+           $('#button-previous').click(function(){
+                $('.sp.active').removeClass('active').addClass('oldActive');
+                $('#line a.active-link').removeClass('active-link').addClass('old-link');
+                if ( $('.sp.oldActive').is(':first-child')) {
+                    $('.sp').last().addClass('active');
+                    $("#line a").last().addClass("active-link");
+                         $("#line a").first().addClass("old-link");
+                }else{
+                    $('.sp.oldActive').prev().addClass('active');
+                    $("#line a.active-link").addClass("old-link");
+                    $("#line a.active-link").removeClass('active-link');
+                    $("#line a.old-link").prev().addClass("active-link");
+                }
+                $('.sp.oldActive').removeClass('oldActive');
+                 $('#line a.old-link').removeClass('old-link');
+                $('.sp').fadeOut();
+                $('.sp.active').fadeIn();
+            });
+
+            $('.sp.active').show();
+
+
+
+
+     $('#button-next0').click(function(){
+            $('.sp0.active').removeClass('active').addClass('oldActive');
+            $('#line-next a.active-link').removeClass('active-link').addClass('old-link');
+                if ($('.sp0.oldActive').is(':last-child')) {
+                    $('.sp0').first().addClass('active');
+                    /*$("#line a").removeClass("active-link");*/
+                    $("#line-next a").first().addClass("active-link");
+                    $("#line-next a").last().addClass("old-link");
+                    }else{
+                        $('.sp0.oldActive').next().addClass('active');
+                        $("#line-next a.active-link").addClass("old-link");
+                        $("#line-next a.active-link").removeClass('active-link');
+                        $("#line-next a.old-link").next().addClass("active-link");
+                    }
+                    $('.sp0.oldActive').removeClass('oldActive');
+                    $('#line-next a.old-link').removeClass('old-link');
+                    $('.sp0').fadeOut();
+                    $('.sp0.active').fadeIn();
+            });
+
+
+
+    $('#button-previous0').click(function(){
+                $('.sp0.active').removeClass('active').addClass('oldActive');
+                $('#line-next a.active-link').removeClass('active-link').addClass('old-link');
+                if ( $('.sp0.oldActive').is(':first-child')) {
+                    $('.sp0').last().addClass('active');
+                    $("#line-next a").last().addClass("active-link");
+                         $("#line-next a").first().addClass("old-link");
+                }else{
+                    $('.sp0.oldActive').prev().addClass('active');
+                    $("#line-next a.active-link").addClass("old-link");
+                    $("#line-next a.active-link").removeClass('active-link');
+                    $("#line-next a.old-link").prev().addClass("active-link");
+                }
+                $('.sp0.oldActive').removeClass('oldActive');
+                 $('#line-next a.old-link').removeClass('old-link');
+                $('.sp0').fadeOut();
+                $('.sp0.active').fadeIn();
+            });
+
+            $('sp0.active').show();
+
+$("#line a").click(function(event){
+        event.preventDefault();
+        if($(this).is(":first-child")) {
+            $(".sl .sp").hide();
+             $(".sl .sp").first().css("display","true");
+             $("#line a").removeClass("active-link");
+             $("#line a").first().addClass("active-link");
+        }
+        if($(this).is(":nth-child(2)")){
+            $(".sl .sp").hide();
+            $(".sl .sp:nth-child(2)").css("display","true");
+             $("#line a").removeClass("active-link");
+            $("#line a:nth-child(2)").addClass("active-link");
+
+        }
+        if($(this).is(":nth-child(3)")){
+            $(".sl .sp").hide();
+             $(".sl .sp:nth-child(3)").css("display","true");
+              $("#line a").removeClass("active-link");
+              $("#line a:nth-child(3)").addClass("active-link");
+        }
+        if($(this).is(":nth-child(4)")){
+            $(".sl .sp").hide();
+             $(".sl .sp:nth-child(4)").css("display","true");
+              $("#line a").removeClass("active-link");
+              $("#line a:nth-child(4)").addClass("active-link");
+        }
+    });
+
+
+
+$("#line-next a").click(function(event){
+        event.preventDefault();
+        if($(this).is(":first-child")) {
+            $(".sl0 .sp0").hide();
+             $(".sl0 .sp0").first().css("display","true");
+             $("#line-next a").removeClass("active-link");
+             $("#line-next a").first().addClass("active-link");
+        }
+        if($(this).is(":nth-child(2)")){
+            $(".sl0 .sp0").hide();
+            $(".sl0 .sp0:nth-child(2)").css("display","true");
+             $("#line-next a").removeClass("active-link");
+            $("#line-next a:nth-child(2)").addClass("active-link");
+
+        }
+        if($(this).is(":nth-child(3)")){
+            $(".sl0 .sp0").hide();
+             $(".sl0 .sp0:nth-child(3)").css("display","true");
+              $("#line-next a").removeClass("active-link");
+              $("#line-next a:nth-child(3)").addClass("active-link");
+        }
+        if($(this).is(":nth-child(4)")){
+            $(".sl0 .sp0").hide();
+             $(".sl0 .sp0:nth-child(4)").css("display","true");
+              $("#line-next a").removeClass("active-link");
+              $("#line-next a:nth-child(4)").addClass("active-link");
+        }
+    });
+
+
+
+ $('#button-next2').click(function(){
+        $('.active').removeClass('active').addClass('oldActive');
+            if ($('.oldActive').is(':last-child')) {
+                $('.sp2').first().addClass('active');
+            }
+            else {
+                $('.oldActive').next().addClass('active');
+            }
+
+            $('.oldActive').removeClass('oldActive');
+            $('.sp2').fadeOut();
+            $('.active').fadeIn();
+    });
+ /*$('.sp2').first().addClass('active');
+            $('.sp2').hide();*/
+
+    $('#button-previous2').click(function() {
+        $('.active').removeClass('active').addClass('oldActive');
+
+        if ( $('.oldActive').is(':first-child')) {
+            $('.sp2').last().addClass('active');
+        } else{
+            $('.oldActive').prev().addClass('active');
+        }
+        $('.oldActive').removeClass('oldActive');
+        $('.sp2').fadeOut();
+        $('.active').fadeIn();
+          $('sp2.active').show();
+    });
+
+
+             /*$('.sp2').first().addClass('active');
+            $('.sp2').hide();
+              $('sp2.active').show();*/
+
+
+        });
+
+    </script>
+    <script src="js/jquery.viewportchecker.js"></script>
+    <script src="js/custom.js"></script>
+    <style type="text/css">
+    .navbar-toggle .icon-bar {
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+    background-color: #888;
+}</style>
+    </head>
+    <body>
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <img src="images/agro.png" />
+                <div class="header-inside1"><p>платовские апартаменты</p>
+                    <p>г. Ансай, ул. Коминтерна 4/9</p>
+                </div>
+                <div class="header-inside2">
+                    <p><span class="blue-font">+7 (893)</span> 22-99-049</p>
+                    <a href="#">Заказать звонок</a>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="main-content-top">
+                <div class="inner-div">
+                    <img src="images/yellow-table.png"  alt="" />
+                    <div class="absolute1">
+                        <p>Современный<p><h3>жилой дом в Аксае</h3><p>по приемлемым ценам</p></p>
+                    </div>
+                    <div class="absolute2">
+                        <p>Квартиры <br/>от 1 200 200 P</p>
+                    </div>
+                    <div class="absolute3">
+                        <h2>получить каталог квартир</h2>
+                        <form action="" method="POST">
+                            <img src="images/i2.png"  style="left: -134px;position: absolute;top: 24px;"/>
+                           <input class="fa-user"  type="text" value="" placeholder="Ваше имя"/>
+                            <img src="images/i1.png"  style="left: -134px;position: absolute;top: 68px;"/>
+                            <input type="text" value="" placeholder="E-mail"/>
+                            <img src="images/i3.png"  style="left: -134px;position: absolute;top: 109px;"/>
+                            <input type="text" value="" placeholder=" Контактный телефон"/>
+                            <input type="submit" value="получить" />
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="content2">
+            <div class="triangle1">
+               <p>Строительство<p><h3>уже закончилось</h3><p style="padding-left:15px">дом сдан в эксплуатацию!</p></p>
+            </div>
+            <div class="triangle-icons animated animated-parent">
+                <div id="triangle-icons1">
+                    <div class="icon-container" id="icon-container1"><img class="animated infinite pulse"  src="images/icon1.png"  /><p>Экологически чистый жилой квартал</p></div>
+                    <div class="icon-container"  id="icon-container2"><img class="animated infinite bounce" src="images/icon2.png" /><p>Собственная зона отдыха для взрослых и детей</p></div>
+                    <div class="icon-container"  id="icon-container3"><img class="animated infinite flash" src="images/icon3.png" /><p>Современная планировка домов!</p></div>
+                </div>
+                <div id="triangle-icons2">
+                    <div class="icon-container"  id="icon-container4"><img class="animated infinite rotateIn" src="images/icon4.png" /><p>30 минут от Ростова-на-Дону</p></div>
+                    <div class="icon-container"  id="icon-container5"><img class="animated infinite swing" src="images/icon5.png" /><p>Строительство по каркасно-монолитной технологии!</p></div>
+                </div>
+            </div>
+            <div class="inner-div2" style="background:#efefef">
+                <div class="inner">
+                  <div><p>Планировка</p></div>
+                </div>
+                <div class="count">
+                    <select name="count" id="count"><img src="images/arrow-select.png" />
+                        <option name="1"> Однокомнатные квартиры </option>
+                        <option name="2"> Однокомнатные квартиры </option>
+                        <option name="3"> Однокомнатные квартиры </option>
+                        <option name="4"> Однокомнатные квартиры </option>
+                        <option name="5"> Однокомнатные квартиры </option>
+                    </select> 
+                    <!--<img src="images/arrow-select.png" />-->
+                    <h1>
+                        <p>От 34,4 до 49,2м2</p>
+                        <p>От 1238 400 руб.</p>
+                    </h1>
+                    <input type="submit" value="узнать стоимость" />
+                    <input type="submit" value="рассчитать ипотеку" / style="background-color:#eb9b00">
+                </div>
+                <div class="slide" id="line">
+                    <div class="slide-line">
+                        <a href="#">35m2</a>
+                        <a href="#">40m2</a>
+                        <a href="#">45m2</a>
+                        <a href="#">55m2</a>
+                    </div>
+                    <div class="slider-container" style="width:300px;position:relative;margin:56px 0" >
+                        <div id="slider-wrapper">
+                            <div id="slider" class="sl">
+                                <div class="sp" style="background:url('images/slide-image.png')"></div>
+                                <div class="sp" style="background:gray"></div>
+                                <div class="sp" style="background:black"></div>
+                                <div class="sp" style="background:green"></div>
+                            </div>
+                        </div>
+                        <div id="nav"></div>
+                        <div id="button-previous"><img src="images/arrow1-right.png" /></div>
+                        <div id="button-next"><img src="images/arrow1-left.png" /></div>
+                        <img src="images/slide-button.png" />
+                    </div>
+                </div>
+            </div>
+             <div class="inner-div2" style="margin-top:-50px;height: 500px;">
+                <div class="slide slide-next" id="line-next">
+                    <div class="slide-line" style="margin: 0 35px;">
+                        <a href="#">35m2</a>
+                        <a href="#">40m2</a>
+                        <a href="#">45m2</a>
+                        <a href="#">55m2</a>
+                    </div>
+                    <div class="slider-container" style="width:300px;position:relative;margin:56px 0" >
+                        <div id="slider-wrapper0">
+                            <div id="slider0" class="sl0">
+                                <div class="sp0" style="background:url('images/slide-image.png')"></div>
+                                <div class="sp0" style="background:gray"></div>
+                                <div class="sp0" style="background:black"></div>
+                                <div class="sp0" style="background:green"></div>
+                            </div>
+                        </div>
+                        <div id="nav0"></div>
+                        <div id="button-previous0"><img src="images/arrow1-right.png" /></div>
+                        <div id="button-next0"><img src="images/arrow1-left.png" /></div>
+                        <img src="images/slide-button.png" />
+                    </div>
+                </div>
+                <div class="count">
+                    
+                        <select name="count" id="count"><img src="images/arrow-select.png" />
+                            <option name="1"> Однокомнатные квартиры </option>
+                            <option name="2"> Однокомнатные квартиры </option>
+                            <option name="3"> Однокомнатные квартиры </option>
+                            <option name="4"> Однокомнатные квартиры </option>
+                            <option name="5"> Однокомнатные квартиры </option>
+                        </select><!--<img src="images/arrow-select.png" />-->
+                   
+                    <h1>
+                        <p>От 34,4 до 49,2м2</p>
+                        <p>От 1238 400 руб.</p>
+                    </h1>
+                    <input type="submit" value="узнать стоимость" />
+                    <input type="submit" value="рассчитать ипотеку" />
+                </div>
+            </div>
+        </div>
+        <div class="content3">
+            <div class="triangle1 special">
+               <p>Ипотека<p><h3>обслуживается</h3><p style="padding-left:15px">банковскими партнерами</p></p>
+            </div>
+            <img src="images/brand.png" alt=""/>
+            <div style="width:100%;border-bottom:1px solid #cccccc;margin:30px 0;transform: rotate(-1deg);"></div>
+            <div class="triangle1 special">
+               <p>Покупайте<p><h3>комфортабельное</h3><p style="padding-left:15px">жилье</p></p>
+            </div>
+            <div class="column-wraper">
+            <div class='column1'>
+                <div class="box1">
+                    <img src="images/heart.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+                <div class="box1">
+                    <img src="images/tree.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+                <div class="box1">
+                    <img src="images/area.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+            </div>
+            <div class='column2'>
+                <div class="box2">
+                    <img src="images/buy.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+                <div class="box2">
+                    <img src="images/search.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+                <div class="box2">
+                    <img src="images/details.png" />
+                    <h1>Семейная инфраструктура</h1>
+                    <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+         <div class="inner-div2" style="height: 400px;">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d247583.89135988225!2d40.02265245125997!3d47.20146455302386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zZ29vZ2xlIG1hcCDQoNC-0YHRgtC-0LIg0L3QsCDQtNC-0L3RgyDQsNGN0YDQvtC_0L7RgNGC!5e1!3m2!1sru!2s!4v1417425614561" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                <div class="place-map">
+                    <p>Место</p>
+                     <h1>нахождения</h1>
+                     <h1>&nbsp;&nbsp;&nbsp;&nbsp;комплекса</h1>
+                </div>
+                <div class="map-list">
+                   <h1>О проекте</h1>
+                   <p>Платовские апартаменты - современный жилой квартал в городе Аксае, строящийся для тех, кто хочет жить в тихом, живописном и экологически чистом месте, расположеном по ул. Коминтерна.</p><p>
+                   Для застройки разработаны индивидуальные проекты 13-ти этажного жилых домов карскасномонолитной конструкции с приминением лучших материалов, технологий и инженерных решений, прекрасно зарекомендовавших себя в международной практике строительства. Мы рады предложить Вам возможность приобрести 1-, 2-, и 3-комнатные квартиры свободных</p>
+                   <img src="images/search1.png" />
+                   <a href="#">Посмотреть на карте</a>
+                </div>
+         </div>
+         <div class="inner-div3">
+         </div>
+         <div class="inner-div4 " style="height:500px">
+            <div class="content2">
+                <div class="triangle1" style="transform: rotate(1deg);">
+                    <p>Ипотека</p>
+                    <p></p>
+                    <h3>обслуживается</h3>
+                    <p style="padding-left:15px">банковскими партнерами</p>
+                    <p></p>
+                </div>
+                <div class="content-slide">
+                  <div class='slide1'>
+                    <div class="slider-container2" style="height:260px;width:300px;position:relative; transform: rotate(1deg);">
+                        <div id="slider-wrapper2">
+                             <div id="slider2">
+                                <div class="sp2" style=""></div>
+                                <div class="sp2" style="background:yellow"></div>
+                                <div class="sp2" style="background:gray" ></div>
+                                <div class="sp2" style="background:green"></div>
+                            </div>
+                        </div>
+                        <div id="nav2"></div>
+                        <div id="button-previous2"><img src="images/arrow1.png" /></div>
+                        <div id="button-next2"><img src="images/arrow2.png" /></div>
+                        <img src="images/load.png" / style="position:absolute">
+                    </div>
+                  </div>
+                  <div class='slide2'>
+                    <p>
+                    Жилой комплекс “Платовские апартаменты” - это хорошая возможность за приемлемые деньги оградить себя от традиционных городских проблем, создать себе и своим детям более комфортную и безопасную среду обитания.
+                    Поселившись здесь, Вы получите неоценимую возможность пользоваться сочетанием насыщеной инфраструктуры и необычайного уюта и безопасноти. В июле 2015г. завершится строительство нового Ворошиловского моста.
+                    Буквально в радиусе километра - детский сад, школа. Сбербанк, МФЦ, торговый центр, продуктовые и хозяйственные магазины, кафе и ресторан, поликлиника, аптеки, парикмахерские и салоны красоты, фитнес-центр, стадион, АЗС, пункт шиномонтажа и автомойки.</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+          <div class="inner-div4" style="background: #efefef">
+                <div class="content2">
+                    <div class="triangle1" style="transform: rotate(1deg);margin: 33px auto;">
+                        <p>Ипотека</p>
+                        <p></p>
+                        <h3>обслуживается</h3>
+                        <p style="padding-left:15px">банковскими партнерами</p>
+                        <p></p>
+                    </div>
+                    <div class="column-wraper"  style="transform: rotate(1deg);">
+                        <div class='column1'>
+                            <div class="box3">
+                                <img src="images/icn1.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Жилой комплекс ”Плотовские апартаменты” обладает собственными подземными и надземными парковками на 100 парковачных мест. В проекте предусмотрено помещение для собственной службы охраны.</p>
+                            </div>
+                            <div class="box4">
+                                <img src="images/icn2.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Параллельно со строительством служба эксплуатации, включающая, втом числе, индивидуальную крушную котельную.</p>
+                            </div>
+                         </div>
+                        <div class='column2'>
+                            <div class="box3">
+                                <img src="images/icn3.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Наличие большое количества нежелых помещений на первых этажах жилого комплекса позволяет разместить всю необходимую для жильцов инфраструктуру в шаговой доступности.</p>
+                            </div>
+                            <div class="box4">
+                                <img src="images/icn4.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Собственные зоны оттыха, спорта и рыбалка, набережная и озелененная территория дополняет многообразие преимуществ жилого квартала “Донские просторы”</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                         <input id="column2-input" type="submit" value="рассчитать ипотеку"  style="background-color:#eb9b00; margin:10px auto;" />
+                    </div>
+                </div>
+            </div>
+
+             <div class="inner-div4" style="border:none">
+                <div class="content2" >
+                    <div class="triangle1" style="transform: rotate(1deg);margin: 33px auto;">
+                        <p>Отделка и</p>
+                        <p></p>
+                        <h3>комплектация</h3>
+                        <p style="padding-left:15px; font-size:1em">на момент заселения <br/>&nbsp;&nbsp;в вашей квартире уже будут</p>
+                        <p></p>
+                    </div>
+                    <div class="column-wraper"  style="transform: rotate(1deg);">
+                        <div class='column1'>
+                            <div class="box1">
+                                <img src="images/icn-01.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                            <div class="box1">
+                                <img src="images/icn-02.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                            <div class="box1">
+                                <img src="images/antena.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                         </div>
+                        <div class='column2'>
+                            <div class="box1">
+                                <img src="images/icn-03.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                            <div class="box1">
+                                <img src="images/icn-04.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                            <div class="box1">
+                                <img src="images/icn-05.png" />
+                                <h1>Семейная инфраструктура</h1>
+                                <p>Детские сады, собственная зона отдыха, спортивные и десткие площаждки</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-div4 inner-5" style="border:0">
+                <img src="images/background2.png" />
+                <div class="triangle1" style=";margin: 33px auto;">
+                        <p>Предложение</p>
+                        <p></p>
+                        <h3>в подарок</h3>
+                        <p style="padding-left:15px; font-size:1.2em">на момент заселения <br/>&nbsp;&nbsp;предложение</p>
+                        <p></p>
+                </div>
+                <input id="column2-input1" type="submit" value="получить купон"  style="background-color:#eb9b00; margin:10px auto;padding:5px"  />
+            </div>
+            <div class="inner-div4 inner-6">
+                <div class="content2"id="content2">
+                    <div class="triangle1" style="transform: rotate(0deg);margin: 33px auto;">
+                        <p>Отделка и</p>
+                        <p></p>
+                        <h3>комплектация</h3>
+                        <p style="padding-left:15px; font-size:1em">на момент заселения <br/>&nbsp;&nbsp;в вашей квартире уже будут</p>
+                        <p></p>
+                    </div>
+                    <div class="col-1" style="margin-left:137px">
+                        <h1>Рассрочка</h1>
+                        <p>первоначальный взнос</p>
+                        <h1>30%</h1>
+                          <input  type="submit" value="получить купон"  style="background-color:#eb9b00;padding:5px"  />
+                    </div>
+                    <div class="col-2">
+                        <h1>Ипотека</h1>
+                        <h5>банки партнеры</h5>
+                        <img src="images/brands.png" />
+                        <input  type="submit" value="рассчитать стоимость"  style="background-color:#eb9b00;padding:5px"  />
+                    </div>
+                    <div class="col-3">
+                        <h1 style="line-height: 1em;">Специальное предложение</h1>
+                        <p>При 100% предоплате коврик в подарок</p>
+                        <input  type="submit" value="получить купон на скидку"  style="background-color:#eb9b00; padding:5px"  />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="inner-div4 inner-8" style="border:none">
+                <div class="content2"id="content2">
+                    <div class="triangle1" style="margin: 33px auto;">
+                        <p>Отзывы</p>
+                        <p></p>
+                        <h3>благодарных</h3>
+                        <p style="padding-left:15px; font-size:1.2em">&nbsp;&nbsp;клиентов</p>
+                        <p></p>
+                    </div>
+                    <div class="wrap-people">
+                        <div class="people">
+                            <img src="images/people1.png" />
+                            <h1>Сергеев Антон</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="people left" >
+                            <img src="images/people2.png" />
+                            <h1>Ежова Марианна</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="people">
+                            <img src="images/people3.png" />
+                            <h1>Турчинов Илья</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="people left">
+                            <img src="images/people4.png" />
+                            <h1>Морозова Ирина</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="inner-div4 inner-7 inner-5" style="border:none">
+                <img src="images/background3.png" />
+                <div class="triangle1" style=";margin: 33px auto;">
+                        <p>Как</p>
+                        <p></p>
+                        <h3 style="color:white;font-size:1.6">забронировать</h3>
+                        <p style="padding-left:15px; font-size:1.2em"><br/>&nbsp;&nbsp;квартиру</p>
+                        <p></p>
+                </div>
+                <input id="column2-input1" type="submit" value="связаться с нами"  style="background-color:#eb9b00; margin:10px auto;padding:5px"  />
+            </div>
+            <div class="inner-div4 inner-9" style="background:#efefef;margin: -30px 0 0;" >
+                <div class="content2" id="content2" style="max-width: 1042px;min-width: 1048px;">
+                    <div class="triangle1" style=";margin: 33px auto;">
+                        <p>Разрешение</p>
+                        <p></p>
+                        <h3>на строительство</h3>
+                        <p style="padding-left:15px; font-size:0.8em">&nbsp;&nbsp;согласно 214 ф3</p>
+                        <p></p>
+                    </div>
+                    <img src="images/doc.png" alt="" />
+                </div>
+            </div>
+            <div class="inner-div4 inner-10" style="">
+                <div class="content2"id="content2">
+                    <div class="triangle1 special" style=";margin: 33px auto;">
+                        <p>контакты</p>
+                        <p></p>
+                        <h3>и реквизиты</h3>
+                        <p style="padding-left:15px; font-size:0.8em">&nbsp;&nbsp;согласно 214 ф3</p>
+                        <p></p>
+                    </div>
+                    <div class="column-wraper">
+                        <div class='column1'>
+                            <div class="box3">
+                                <h1>Отдел продаж</h1>
+                                <table>
+                                    <tr><td class="blue-font">Телефон</td><td>+7(868)22 99 049</td></tr>
+                                    <tr><td class="blue-font">Адрес</td><td>г. Ансай ул. Интерна</td></tr>
+                                    <tr><td class="blue-font">E-mail</td><td>sales@sitename.com</td></tr>
+                                    <tr><td class="blue-font">Адрес строительства</td><td>г. Ансай ул. Интерна</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                         <div class='column2'>
+                            <div class="box3">
+                                <h1>ООО Агро-Клуб</h1>
+                                 <table>
+                                    <tr><td class="blue-font">ИНН</td><td>435484393394956</td></tr>
+                                    <tr><td class="blue-font">КПП</td><td>435484393394</td></tr>
+                                    <tr><td class="blue-font">ОГРН</td><td>23509783</td></tr>
+                                    <tr><td class="blue-font">Юридический адрес</td><td>г. Ростов-на-Дону, ул. Садовая</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-div4 inner-11" style="">
+                <div class="content2" id="content2">
+                    <img src="images/agro.png">
+                    <div class="middle">
+                        <h2>платовские апартаменты</h2>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class='social'>
+                        <ul>
+                            <li><a href=#><img src="images/social1.png" /></a></li>
+                            <li><a href=#><img src="images/social2.png" /></a></li>
+                            <li><a href=#><img src="images/social3.png" /></a></li>
+                            <li><a href=#><img src="images/social4.png" /></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <p>Разработка сайта<img src="images/bird.png" /></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

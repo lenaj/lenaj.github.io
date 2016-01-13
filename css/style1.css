@@ -1,0 +1,132 @@
+/**{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing:border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+body{
+	background-image: url("../images/bg.png");
+}
+.clearfix{
+	clear: both;
+}
+
+.container{
+	width: 73.7%;
+	margin: 30px auto;
+	height: auto;
+	max-width: 1100px;
+	box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+
+.nav{
+	
+	height: 9em;
+}
+
+.nav  ul li{
+	float: left;
+	margin: 6px 12px 1px 5px;
+	padding: 17px 6px 11px;
+}
+
+.nav  ul.left > li{
+	float: left;
+}
+.nav  ul.right > li{
+	float: right;
+}
+
+
+.nav  ul  li a{
+	background-image: url("../images/nav-bg.png");
+	background-size: 100% 100%;
+    color: #616369;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 141px;
+    font: Helvetica,Arial,sans-serif;
+}
+
+.nav  ul  li a:hover{
+	background-image: url("../images/see-more-bg.png");
+	background-size: 100% 100%;
+}
+
+
+
+.logo{
+	position: absolute;
+	left:45%;
+}
+.logo img{
+	/*width: 80%;*/
+}
+/*
+.about{
+	background-image: url("../images/inner-header.jpg");
+    background-size: 100% 100%;
+    border-radius: 3px;
+    height: 180px;
+    margin: 0 0 0 -6px;
+    padding: 1px;
+    width: 101%;
+}
+
+.menu{
+	height: 9em;
+	width: auto;
+}
+/*
+.about h3{
+	color: #f2f0eb;
+    font: 38px Georgia,serif;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 3px #494949;
+    margin: 54px 0 20px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+
+.about p{
+	font-size: 1.4em;
+	color: #636363;
+	font-family: Helvetica,Arial,sans-serif;
+	padding: 36px 27px 16px;
+	text-align: center;
+	color: #525252;
+	background-color:#F5F5F5;
+	width: 50%;
+	margin:1px auto;
+	background-size: 200% 200%;
+	border-top-right-radius: 70% 91px;
+	border-top-left-radius: 70% 91px;
+	/*box-shadow: -6px -7px 1px 0 #3c3c3c;*/
+}
+
+.main-text{
+	padding: 4% 4% 0;
+}
+
+.main-text h2{
+	font-family: Georgia,serif;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    font-size:20px;
+    color: #636363;
+}
+
+p.mrg{
+	margin:4% 0;
+}*/

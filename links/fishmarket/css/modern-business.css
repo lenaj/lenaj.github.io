@@ -1,0 +1,340 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    font-family: Georgia;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 26em;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 26em;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+.fill{
+    background-image: url("../maket.jpg");
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+#shadow:before{
+    content: "";
+    display: block;
+    width: 100%;
+    box-shadow: 2px 1px 5px 1px black;
+}
+.navbar-nav > li > a {
+    padding-bottom: 7px;
+    padding-top: 8px;
+}
+.divider-vertical-second-menu{
+   height: 22px;
+   border-right: 1px solid #434343;
+   background-color: #ddd;
+   margin: 5px 0 0;
+   overflow: hidden;
+   width: 1px;
+}
+
+.mac-style{
+    width: 5px;
+    /*-webkit-transition: width 1s ease-in-out;
+    -moz-transition:width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;*/
+    transition: width 1s ease-in-out;
+   float:right;
+    border-radius:15px;
+   background-color: #313131;
+   background:url("../search.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding: 2px 0 0 26px;
+    
+}
+.mac-style:hover{
+    background-image: url("../search1.png");
+}
+ .mac-style:focus, .form-group i:focus{
+    width: 500px;
+}
+#nav-search:placeholder{
+    margin: 0 0 0 20px;
+}
+.mac-style placeholder{
+    margin: 0 0 0 30px;
+}
+.form-group{
+    position: relative;
+   /* background:url("../search.png");
+    background-repeat: no-repeat;*/
+}
+
+.sign{
+    float: right;
+    width: 100px;
+    margin: 2px 5px;
+    font-family: Georgia;
+}
+
+.sign a{
+    margin: 0 3px;
+    color: #ffffff;
+}
+.sign a:first-child{
+    color: #e03042;
+}
+
+.item-count{
+    float: right;
+    margin: 5px 0;
+}
+.item-count p{
+    text-align: right;
+    margin: 0;
+    color: #9d9d9d;
+}
+.left-sidebar{
+    background: rgb(251,251,251); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(251,251,251,1) 75%, rgba(251,251,251,1) 87%, rgba(245,245,245,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(75%,rgba(251,251,251,1)), color-stop(87%,rgba(251,251,251,1)), color-stop(100%,rgba(245,245,245,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(251,251,251,1) 75%,rgba(251,251,251,1) 87%,rgba(245,245,245,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(251,251,251,1) 75%,rgba(251,251,251,1) 87%,rgba(245,245,245,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(251,251,251,1) 75%,rgba(251,251,251,1) 87%,rgba(245,245,245,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(251,251,251,1) 75%,rgba(251,251,251,1) 87%,rgba(245,245,245,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+border-radius: 5px;
+
+border: 1px solid #cccccc;
+border-left: transparent;
+margin: 50px 0 0;
+padding-bottom: 13px;
+}
+ul.sidebar li{
+    list-style-type: none;
+}
+ul.sidebar li a{
+    color: #5f5f5f;
+    line-height: 1.8em;
+}
+
+
+.left-sidebar h2{
+    color: #e03042;
+    margin-left: 45px;
+    font-size: 1.4em;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 0 9px;
+}
+.left-sidebar li span{
+    color: #e03042;
+    font-weight: 700;
+    margin: 0 5px;
+}
+.right-column{
+   margin: 50px 0 0;
+   box-shadow: -7px 6px 3px -3px #d5cfd3 inset;
+   border-radius: 9px;
+}
+.right-column .row > div{
+   /* background: url("../product.jpg");*/
+    background-size: 100% 100%;
+    max-width: 300px;
+    height: 300px;
+    min-width: 245px;
+
+}
+.right-column h2, .container-fluid .container h2{
+    color: #e03042;
+    font-size: 1.3em;
+
+}
+.buy{
+   bottom: 46px;
+   left: 159px;
+   position: absolute;
+}
+
+.container-fluid:before{
+    content: "";
+    display: block;
+    box-shadow: 1px 1px 1px 1px #c9b9bd;
+    width: 100%;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.image{
+    width: 103px;
+}
+.more p{
+
+    margin: 0 0 5px 132px;
+
+}
+.more p > a{
+    color: #d41228;
+    text-transform: uppercase;
+    margin: 0 7px;
+   font-family: Arial,status-bar;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+.image + h2{
+    margin: 0 0 5px 133px;
+}
+
+.container-fluid .col-xs-12{
+    padding: 14px 0;
+}
+
+.footer{
+    background-color: #d41228;
+    color: white;
+    font-family: sans-serif;
+}
+.footer h3{
+    color: white;
+    font-size: 1.5em;
+}
+.footer > .container > p{
+    text-align: center;
+    margin: 39px;
+}
+.footer > div{
+    padding: 0 40px;
+}
+.footer > .container > .row > div:first-child{
+   padding: 0 3% 3% 11%;
+    padding-left: 11%;
+    border-right: 1px solid white;
+}
+.footer > .container > .row > div:first-child + div{
+    padding: 0 0 0 5%;
+}
+.foo{
+    background-color: #250303;
+    padding: 10px 0;
+}
+.foo p{
+    text-align: center;
+    color: white;
+    font-family: "Trebuchet MS";
+}
+.foo:before{
+    box-shadow: none;
+}
+@media only screen and (max-width:600px) {
+ .more p{
+    margin: 0 0 5px 13px;
+  }
+  header.carousel .fill{
+    background-image: url("../maketmini.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .carousel-caption img{
+    max-width: 100%;
+  }
+  .carousel{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+.carousel-caption{
+    right: 0;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+    .minimum img{
+        max-width: 218px;
+    }
+    .buy {
+    bottom: 74px;
+    left: 126px;
+    position: absolute;
+}
+
+}

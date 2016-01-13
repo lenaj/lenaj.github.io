@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adaptive Template</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="js/backgroundsize.min.htc"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/carusel.js"></script>
+<script>
+jQuery(document).ready(function(){
+function slide_show3() {
+$(".main-image-3").animate({"opacity":"0"}, 1000)
+$(".main-image-2").animate({"opacity":"1"}, 1000),$(".main-image").animate({"opacity":"1"}, 1000),$(".main-image-3").animate({"opacity":"0"}, 1000)
+$(".main-image-2").animate({"opacity":"1"}, 3000),$(".main-image").animate({"opacity":"1"}, 3000),$(".main-image-3").animate({"opacity":"0"}, 3000)
+$(".main-image-2").animate({"opacity":"0"}, 1000),$(".main-image-3").animate({"opacity":"0"}, 1000)
+$(".main-image").animate({"opacity":"1"}, 1000),$(".main-image-2").animate({"opacity":"0"}, 1000),$(".main-image-3").animate({"opacity":"0"}, 1000)
+$(".main-image").animate({"opacity":"1"}, 3000),$(".main-image-2").animate({"opacity":"0"}, 3000),$(".main-image-3").animate({"opacity":"0"}, 3000)
+
+$(".main-image").animate({"opacity":"0"}, 3000)
+$(".main-image-3").animate({"opacity":"1"}, 1000)
+$(".main-image-3").animate({"opacity":"1"}, 3000, slide_show3)
+};
+slide_show3();
+
+
+$("#home-logo-container").click(function(){
+    $(".white-right").addClass("show-animation");
+  /* $(".white-right-list li").addClass("object");*/
+     $(".white-right-list li").addClass("opacity");
+})
+});
+</script>
+  </head>
+
+  <body>
+     <ul class="navigation">
+        <li class="nav-item"><a href="">News</a></li>
+        <li class="nav-item"><a href="">About</a></li>
+        <li class="nav-item"><a href="">Contacts</a></li>
+        <li class="nav-item"><a href="">Work</a></li>
+        <li class="nav-item"><a href="">Blog</a></li>
+    </ul>
+   
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+     <label for="nav-trigger"></label>
+     <div class="logo-mobile"><img class="animated" src="images/logo-mobile.png" alt="" /></div>
+   
+    <div style="clear:both"></div>
+    
+    <div class="site-wrap">
+        <div class="content">
+            <div class="main-image">
+                <img src="images/mass1.jpg" alt="main image"/>
+            </div>
+            <div class="main-image-2">
+                <img src="images/mass2.jpg" alt="fishes"/>
+            </div>
+            <div class="main-image-3">
+                <img src="images/mass2.jpg" alt="fishes2"/>
+            </div>
+        </div>
+        <div class="white-container">
+            <div class="white-left"></div>
+             <div class="white-right">
+                <div class="white-right-list-wrap">
+                    <ul class="white-right-list">
+                        <li style="transition-delay: 1s"><a href="#">Masseria</a></li>
+                        <li style="transition-delay: 1.5s"><a href="#">Camere</a></li>
+                        <li style="transition-delay: 2s"><a href="#">News</a></li>
+                        <li style="transition-delay: 2.5s"><a href="#">Foto Album</a></li>
+                        <li style="transition-delay: 3s"><a href="#">Tariffe</a></li>
+                        <li style="transition-delay: 3.5s"><a href="#">Contatti</a></li>
+                        <li style="transition-delay: 4s"><a href="#">English Version</a></li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+        <div id="home-logo-container" class="hidden-sm hidden-xs">
+          <img src="images/logo.png" />
+        </div>
+    </div>
+ </body>
+ </html>
