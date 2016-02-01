@@ -1,7 +1,7 @@
- @font-face {
+@font-face {
     font-family: Caslon; /* Имя шрифта */
     src: url(../fonts/caslon.ttf); /* Путь к файлу со шрифтом */
-   }
+}
 .navigation{
     position: fixed;
     top: 0;
@@ -24,34 +24,33 @@
 .nav-item a{
     display: block;
     padding: 1em;
-     background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     transition: color 0.2s, background 0.5s;
-     -ms-behavior: url(js/backgroundsize.min.htc);
+    -webkit-transition: color 0.2s, background 0.5s;
+    -moz-transition: color 0.2s, background 0.5s;
+    -o-transition: color 0.2s, background 0.5s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 .nav-item a:hover {
-  text-decoration: underline;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
-   -ms-behavior: url(js/backgroundsize.min.htc);
+    text-decoration: underline;
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 .site-wrap{
     position: absolute;
     z-index: 102;
     background-color: white;
-    /*min-height: 100%;
-    min-width: 100%;
-    padding: 4em;*/
     top: 0;
     bottom: 100%;
     left: 0;
     background-color: gray;
     right: 0;
     bottom: 0;
-
 }
 
 .nav-trigger{
@@ -67,47 +66,43 @@ label[for="nav-trigger"]{
     width: 42px;
     height: 30px;
     background-image: url('../images/button.png');
-
     background-size: 100% 100%; 
     background-repeat: no-repeat;
-     -webkit-transition: left 0.8s;
-  -o-transition: left 0.8s;
-  -moz-transition: left 0.8s;
-  transition: left 0.8s;
-  transition: left 0.8s;
-   -ms-behavior: url(js/backgroundsize.min.htc);
-
-
+    -webkit-transition: left 0.8s;
+    -o-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    transition: left 0.8s;
+    transition: left 0.8s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 .nav-trigger + label, .site-wrap {
-  -webkit-transition: left 0.8s;
-  -o-transition: left 0.8s;
-  -moz-transition: left 0.8s;
-  transition: left 0.8s;
-  transition: left 0.8s;
-   -ms-behavior: url(js/backgroundsize.min.htc);
+    -webkit-transition: left 0.8s;
+    -o-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    transition: left 0.8s;
+    transition: left 0.8s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 .nav-trigger:checked + label {
-  /*left: 215px;*/
-  -webkit-transition: left 0.8s;
-  -o-transition: left 0.8s;
-  -moz-transition: left 0.8s;
-  transition: left 0.8s;
-  transition: left 0.8s;
-   -ms-behavior: url(js/backgroundsize.min.htc);
+    -webkit-transition: left 0.8s;
+    -o-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    transition: left 0.8s;
+    transition: left 0.8s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 .nav-trigger:checked ~ .site-wrap {
-  left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-   -webkit-transition: left 0.8s;
-  -o-transition: left 0.8s;
-  -moz-transition: left 0.8s;
-  transition: left 0.8s;
-  transition: left 0.8s;
-   -ms-behavior: url(js/backgroundsize.min.htc);
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    -webkit-transition: left 0.8s;
+    -o-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    transition: left 0.8s;
+    transition: left 0.8s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 #home-logo-container {
@@ -122,7 +117,7 @@ label[for="nav-trigger"]{
     right: 0;
     top: 0;
     z-index: 2000;
-     -ms-behavior: url(js/backgroundsize.min.htc);
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 #home-logo-container img {
@@ -141,102 +136,79 @@ label[for="nav-trigger"]{
     overflow: hidden;
     width: 100%;
     height: 100%;
-   /* max-width: 100%;
-   
- max-height: 100%;
-  width:100%;
-  height: 100%;
-   bottom: 0;
-    left: 0;
-     right: 0;
-    top: 0;
-*/
-
 }
 .main-image img, .main-image-2 img, .main-image-3 img {
-  /*max-width: 100%;
-  max-height: 100%;*/
-  width:100%;
-  height: 100%;
-  min-width: 1200px;
-  min-height: 800px;
+    width:100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 800px;
 }
 .content{
-  max-width: 100%;
-  overflow: hidden;
+    max-width: 100%;
+    overflow: hidden;
 }
 .logo-mobile{
-  position: absolute;
-  top: 0;
-  height: 65px;
-  width: 100%;
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
-  z-index: 103;
+    position: absolute;
+    top: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    z-index: 103;
 
 }
 .logo-mobile img{
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
 }
-
-
-/*.nav-trigger:checked ~ .logo-mobile img{
-   -webkit-animation-name: fadeOut;
-          animation-name: fadeOut;
-         
-
-}
-*/
 
 .white-container{
   
-  position: absolute;
-  width: 100%;
-  height:100%;
+    position: absolute;
+    width: 100%;
+    height:100%;
 }
 .white-left, .white-right{
-  float: left;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
 .white-right{
-  background-color: white;
-  width: 0%;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    background-color: white;
+    width: 0%;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     transition: width 2s;
-     -ms-behavior: url(js/backgroundsize.min.htc);
+    -o-transition: width 2s;
+    -moz-transition: width 2s;
+    -ms-behavior: url(js/backgroundsize.min.htc);
 }
 .show-animation{
-  width: 50%;
+    width: 50%;
 }
 .white-right-list-wrap{
-  height: 100%;
-  width: 100%;
-  position: relative;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 .white-right-list{
-  position: absolute;
-  margin: auto;
-  right: 0;
-  left:0px;
-  top:0;
-  bottom: 0;
-  width: 255px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left:0px;
+    top:0;
+    bottom: 0;
+    width: 255px;
     height: 280px;
 }
 .white-right-list li{
-  line-height: 40px;
-  opacity: 0;
+    line-height: 40px;
+    opacity: 0;
 }
 ul li.opacity{
-  opacity: 1;
+    opacity: 1;
 }
-
-
-
 
 .white-right-list a{
    color: #3f2619;

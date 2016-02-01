@@ -1,90 +1,146 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<title>Untitled Document</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="js/respond.src.js"></script>
-
+<![endif]-->
+<title>Portfolio</title>
 </head>
-
-<body>
-	<div class="container">
-		<div class="nav">
-			<a class="logo"><img src="images/logotype.png" /></a>
-			<div class="menu">
-				<ul class="right">
-					<li><a href="index.html">portfolio</a></li>
-					<li><a href="contact.html">contact</a></li>
-					<li><a href="about.html">about</a></li>
-				</ul>
-				<div class="clearfix"></div>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<a class="logo"><img src="images/logotype.png" alt="logo" /></a>
+				<div class="menu">
+					<ul class="right">
+						<li><a href="index.html">portfolio</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
 			</div>
-		</div>
-		<div class="about">
-			<h3>My name is Elena and I make web-sites</h3>
-			<p>Here’s a collection of some of my favs.
-			</p>
-		</div>
-		<div class="works">
-
-			<div class="wrap">
-
-				<div class="work-example">
-					<a href="links/skeleton/index.html" target="blank"><img src="images/skeleton.png"></a>
-					<a href="links/skeleton/index.html" target="blank" class="last-child">see more</a>
-				</div>
-				<!--<div class="work-example">
-					<a href="links/skeleton/index.html" target="blank"><img src="images/skeleton2.png"></a>
-					<a href="links/skeleton/index.html" target="_blank" class="last-child">see more</a>
-				</div>-->
-				<div class="work-example">
-					<a href="links/southernweb/page1.html" target="blank"><img src="images/southern.png"></a>
-					<a href="links/southernweb/page1.html" target="blank" class="last-child">see more</a>
-				</div>
-				<!--<div class="work-example">
-					<a href="links/southernweb/page1.html" target="blank"><img src="images/southern2.png"></a>
-					<a href="links/southernweb/page1.html" target="blank" class="last-child">see more</a>
-				</div>-->
-				<div class="work-example" >
-					<a href="links/wedding/page1.html" target="blank"><img src="images/wedding2.png"></a>
-					<a href="links/wedding/page1.html" target="blank" class="last-child">see more</a>
-				</div>
-
-				<!--<div class="work-example">
-					<a href="links/wedding/page1.html" target="blank"><img src="images/wedding.png"></a>
-					<a href="links/wedding/page1.html" target="blank" class="last-child">see more</a>
-				</div>-->
-				<div class="work-example" >
-					<a href="links/goji/firstpage.html" target="blank"><img src="images/goji.png"></a>
-					<a href="links/goji/firstpage.html" target="_blank" class="last-child">see more</a>
-				</div>
-				<!--<div class="work-example">
-					<a href="links/goji/firstpage.html" target="blank"><img src="images/goji2.png"></a>
-					<a href="links/goji/firstpage.html" target="blank" class="last-child">see more</a>
-				</div>-->
-				<div class="work-example" >
-					<a href="links/fishmarket/index.html" target="blank"><img src="images/fish1.png"></a>
-					<a href="links/fishmarket/index.html" target="_blank" class="last-child">see more</a>
-				</div>
-				<div class="work-example" >
-					<a href="links/rent/index.html" target="blank"><img src="images/rent.png"></a>
-					<a href="links/fishmarket/index.html" target="_blank" class="last-child">see more</a>
-				</div>
-				<div class="work-example" >
-					<a href="links/masseria/index.html" target="blank"><img src="images/masseria.png"></a>
-					<a href="links/masseria/index.html" target="_blank" class="last-child">see more</a>
-				</div>
-				<p style="clear:both">
+			<div class="about">
+				<h3>My name is Elena and I make web-sites</h3>
+				<p>Here’s a collection of some of my projects.
 				</p>
 			</div>
-
+			<div class="works">
+				<div class="wrap">					
+					<div class="work-example wow fadeInLeft animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInLeft;">		
+						<a class="ex" href="links/skeleton/index.html" target="blank">
+							<div class="details">
+								<h3>Skeleton Portfolio</h3>
+								<p>A small project based on Skeleton Boilerplate, represented by one responsive page.</p>
+								<br/>
+								<p>In this project you can also see different CSS3 effects.</p>
+								
+							</div>
+							<img src="images/skeleton.png" alt="project_description_image1" />
+						</a>
+						<a href="links/skeleton/index.html" target="blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example">
+						<a class="ex" href="links/southernweb/page1.html" target="blank">
+							<div class="details">
+								<h3>South web group</h3>
+								<p>An example of simple static website that contains portfolio, 
+									contact and other useful pages.</p>
+								<p></p>
+								
+							</div>
+							<img src="images/southern.png" alt="project_description_image2" />
+						</a>
+						<a href="links/southernweb/page1.html" target="blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example wow fadeInRight animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInRight;" >
+						<a class="ex" href="links/wedding/page1.html" target="blank">
+							<div class="details ">
+								<h3>Masseria Wedding</h3>
+								<p>This is a responsive web page based on Bootstrap framework. </p>
+								<p>It is performed as a responsive landing page with CSS3 and Parrallax effects.</p>
+								
+							</div>
+							<img src="images/wedding2.png" alt="project_description_image3" />
+						</a>
+						<a href="links/wedding/page1.html" target="blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example wow fadeInLeft animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInLeft;" >
+						<a class="ex" href="http://www.golf-fairway.com" target="blank">
+							<div class="details">
+								<h3>Golf & fairway</h3>
+								<p>Adaptive design </p>
+								<p>(Breakpoints (px): </p>
+								<p>320x480, 360x640, 375x640, 414x640, 480x640, 768×1024)</p>
+							</div>
+							<img src="images/golf.jpg" alt="project_description_image4" />
+						</a>
+						<a href="http://www.golf-fairway.com" target="_blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example" >
+						<a class="ex" href="links/vacarella/index.html" target="blank">
+							<div class="details">
+								<h3>Vacarella DDM Group</h3>
+								<p>Responsive Business project based on Bootstrap technology, represented by one landing page. </p>
+							
+								<p>- &nbsp;Slider based on JQuery Slick plugin</p>
+								<p>- &nbsp;Sticky menu and parralax CSS3 effect</p>
+								<p>- &nbsp;Contact Form </p>
+								
+							</div>
+							<img src="images/vacarella.jpg" alt="project_description_image5" />
+						</a>
+						<a href="links/vacarella/index.html" target="_blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example wow fadeInRight animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInRight;" >
+						<a class="ex" href="links/wirberatendich/index.html" target="blank">
+							<div class="details">
+								<h3>Wirberatendich </h3>
+								<p>Responsive Business site that contains 12 complicate forms based on Coffee Cup form builder. </p>
+								<br/>
+								<p>Forms have Javascript and Server side validation, send notification and confirmation mail.</p>
+								<p></p>
+							</div>
+							<img src="images/wirberatih.jpg" alt="project_description_image6" /></a>
+						<a href="links/wirberatendich/index.html" target="_blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example wow fadeInUp animated" data-wow-delay="3000" style="visibility: visible; animation-name: fadeInUp;" >
+						<a class="ex" href="links/raumaspekte/index.html" target="blank">
+							<div class="details">
+								<h3>Raumaspekte</h3>
+								<p>Responsive Bootstrap project that consists of 5 elegant web-pages.</p>
+								
+							</div>
+							<img src="images/raumaspekte.jpg" alt="project_description_image7" />
+						</a>
+						<a href="links/raumaspekte/index.html" target="_blank" class="last-child">see more</a>
+					</div>
+					<div class="work-example wow fadeInUp animated" data-wow-delay="3000" style="visibility: visible; animation-name: fadeInUp;">
+						<a class="ex" href="links/masseria/index.html" target="blank">
+							<div class="details">
+								<h3>Masseria Cisternella</h3>
+								<p>One page project with representation of beautiful css3 effects applied to the menu.</p>
+								
+							</div>
+							<img src="images/masseria.png" alt="project_description_image8" />
+						</a>
+						<a href="links/masseria/index.html" target="_blank" class="last-child">see more</a>
+					</div>
+					<p style="clear:both">
+					</p>
+				</div>
+			</div>
 		</div>
-	</div>
-</body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="js/respond.src.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script>new WOW().init();</script>
+	</body>
 </html>

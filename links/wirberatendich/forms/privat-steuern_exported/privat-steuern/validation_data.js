@@ -1,0 +1,3 @@
+ var data_validation = '{"fb-submit-button":{"hover":{"background-image":""}},"item1_text_1":{},"item2_text_1":{"required":true},"item3_text_1":{"required":true},"item4_text_1":{"required":true},"item5_0_checkbox":{"minlength_checkbox":0},"item6_text_1":{"required":true},"item7_text_1":{"required":true},"item8_text_1":{"required":true},"item9_text_1":{},"item10_text_1":{"required":true},"item11_text_1":{"required":true},"item12_text_1":{},"item13_textarea_1":{"maxlength":"10000"}}';
+ var data_jsplugins = '[]';
+ var data_cssplugins = '[]';

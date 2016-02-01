@@ -1,3 +1,8 @@
+.main-image, .main-image-2, .main-image-3{
+
+    padding:0;
+    position: absolute;
+}
 body{
     background-color: #f2f2f2;
 }
@@ -280,6 +285,7 @@ a.hi-icon:hover  {
     background-attachment: fixed;
     background-position: 56% 114%;
     background-repeat: no-repeat;
+    padding-bottom: 96px;
 }
 
 .aboutme img{
@@ -321,10 +327,11 @@ a.hi-icon:hover  {
 .content1{
     background-color: #32323c;
     background-image: url("../images/work.png");
-
+    padding-top: 77px;
     background-position: 56% 240px;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    padding-bottom: 75px;
 }
 
 .icons2{
@@ -399,6 +406,8 @@ a.hi-icon:hover  {
     margin: 1px 0 0;
     padding: 37px 0;
     width: 100%;
+    padding-top: 100px;
+    padding-bottom: 55px;
 }
 
 .col-8{
@@ -579,6 +588,8 @@ li#active a{
     -moz-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
+    padding-top: 100px;
+    padding-bottom: 77px;
 }
 
 .form{
@@ -588,6 +599,8 @@ li#active a{
     background-repeat: no-repeat;
     background-position: 56% 240px;
     background-attachment: fixed;
+    padding-bottom: 70px;
+    padding-top: 75px
 }
 
 .form a{
@@ -652,21 +665,18 @@ li#active a{
 .footer{
     background-color: #333333;
     width: 100%;
-   /* height: 105px;*/
     margin: -6px 0px;
     padding: 1px;
 }
 
 .footer1{
-
-
     padding-right: 25px;
     padding-top: 13px;
     text-align: right;
     width: 300px;
     color: #ffffff;
-     margin: 30px 0 0 200px;
-     float: left;
+    margin: 30px 0 0 180px;
+    float: left;
 }
 
 .footer1 a{
@@ -730,202 +740,208 @@ li#active a{
     transition:all 1s ease 0s;
 }
 
-
-
-@media only screen and (max-width:1100px) {
-  .navbar-nav li a{
-    font-size: 11px;
-  }
-  #header-headlines span {
-    font-size: 1em;
-}
-.about{
-    width: 100%;
-}
-.main{
-    display: none;
-}
-#services{
-
-    width: 100%;
-}
-.footer1{
-    margin: 30px 0 0 4%;
-}
-}
-
-@media only screen and (max-width:900px) {
-    .footer1{
-        margin: 30px 0 0 0%;
-        width: 40%;
-    }
-    .icons-bottom, .footer2{
-        width: auto;
-    }
-}
-@media only screen and (max-width:900px) {
-     #header-headlines span {
-        font-size: 0.7em;
-    }
-    .icons{
-        display: none;
-    }
-    .text{
-        font-size: 1.3em;
-    }
-    .bold-text2 {
-        color: #f2f2f2;
-        font-size: 3em;
-    }
-    .content1 {
-
-    }
-    .col-8, .col-4{
-        float: none;
-        width: 100%;
-    }
-    #services{
-        width: 100%;
-    }
-    .bold-text, .text2{
-        text-align: center;
-    }
-    .col-8, .col-4 {
-        float: none;
-        width: 90%;
-        margin: 3px auto;
-    }
-    .text2{
-        margin: 0;
-    }
-    .form-xs-8{
-
-    }
-    .nav > li {
-  border-bottom: 1px solid black;
-  box-shadow: 0 1px 0 #333333 inset;
-}
-.nav > li:hover {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-}
+#responsive-menu{
+    -webkit-transition:  ease-in-out;
+  -moz-transition:  ease-in-out;
+  -o-transition:  ease-in-out;
+  -ms-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-iteration-count: 1;
+    transition-duration: 0s;
 
 }
 
-@media only screen and (max-width:700px) {
-.col-xs-4 {
-        margin: 1px auto 40px;
-        width: 90%;
-    }
-    .aboutme img{
-        display: none;
-    }
-    .about-box{
-        width: 90%;
-        text-align: center;
-        margin: 2px auto;
-    }
-    .bold-text, .resume p, .resume h3{
-        text-align: center;
-        margin: 2px;
-    }
-    .icons2 icon {
-    bottom: -42px;
-    color: #323232;
-    font-size: 2em;
-    left: -37px;
-    }
-    .footer1{
-        display: none;
-    }
-    .footer2, .icons-bottom{
-        width: auto;
-    }
-    .forma-info p{
-        text-align: center;
-    }
-    .form-xs-8 {
-       margin: 47px 0 0 4%;
-        width: 80%;
-    }
-    .about, #contact, #about, .about-box{
-        width: 100%;
-    }
-    .text{
-        line-height: 25px;
-    }
-    .col-8, .col-4 {
-        margin: 3px auto 19px;
-        height: auto;
-    }
-    .navbar-brand {
-        font-size: 0.7em;
-    }
-    .col-xs-8{
-        float: none;
-        margin: 20px auto;
-   }
-   #filter{
-        display: none;
-   }
-   .bold-text{
-        font-size: 3.5em;
-   }
-   .last-content{
-        padding: 8% 0 0;
-   }
-   .resume {
-        margin: 44px 0;
-   }
-   .resume h3{
-    font-size: 1.2em;
-   }
-   .col-xs-8 {
-    padding: 0 0 10px 0;
-}
-.form-xs-8{
-    float:none; 
-    clear:both;
-}
+    @media only screen and (max-width:1100px) {
+        .navbar-nav li a{
+            font-size: 11px;
+        }
+        #header-headlines span {
+            font-size: 1em;
+        }
+        .about{
+            width: 100%;
+        }
+        .main{
+            display: none;
+        }
+        #services{
 
-
-
-}
-
-@media only screen and (max-width:500px) {
-    #header-headlines span {
-        font-size: 0.3em;
-    }
-    #header-headlines p {
-        font-size: 0.2em;
-    }
-    .icons-bottom, .footer2{
-        margin: 3px 4%;
-
-    }
-    .text2,.resume p{
-        text-align: left;
-        font-size: 1.2em;
-        margin: 20px 0 0 20px;
-    }
-    
-    .icons2 icon {
-        font-size: 1.2em;
-        bottom: -52px;
-        left: -43px;
-    }
-    .icons2 {
-        height: 32px;
-        left: -19px;
-        width: 32px;
-    }
-    .col-8 a {
-       margin: 3%;
+            width: 100%;
+        }
+        .footer1{
+            margin: 30px 0 0 4%;
+        }
     }
 
-    .col-xs-8{
-        margin:0;
-   }
-}
+    @media only screen and (max-width:900px) {
+        .footer1{
+            margin: 30px 0 0 0%;
+            width: 40%;
+        }
+        .icons-bottom, .footer2{
+            width: auto;
+        }
+    }
+    @media only screen and (max-width:900px) {
+        #header-headlines span {
+            font-size: 0.7em;
+        }
+        .icons{
+            display: none;
+        }
+        .text{
+            font-size: 1.3em;
+        }
+        .bold-text2 {
+            color: #f2f2f2;
+            font-size: 3em;
+        }
+        .content1 {
+
+        }
+        .col-8, .col-4{
+            float: none;
+            width: 100%;
+        }
+        #services{
+            width: 100%;
+        }
+        .bold-text, .text2{
+            text-align: center;
+        }
+        .col-8, .col-4 {
+            float: none;
+            width: 90%;
+            margin: 3px auto;
+        }
+        .text2{
+            margin: 0;
+        }
+        .nav > li {
+            border-bottom: 1px solid black;
+            box-shadow: 0 1px 0 #333333 inset;
+        }
+        .nav > li:hover {
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        }
+
+    }
+
+    @media only screen and (max-width:700px) {
+        .col-xs-4 {
+            margin: 1px auto 40px;
+            width: 90%;
+        }
+        .aboutme img{
+            display: none;
+        }
+        .about-box{
+            width: 90%;
+            text-align: center;
+            margin: 2px auto;
+        }
+        .bold-text, .resume p, .resume h3{
+            text-align: center;
+            margin: 2px;
+        }
+        .icons2 icon {
+            bottom: -42px;
+            color: #323232;
+            font-size: 2em;
+            left: -37px;
+        }
+        .footer1{
+            display: none;
+        }
+        .footer2, .icons-bottom{
+            width: auto;
+        }
+        .forma-info p{
+            text-align: center;
+        }
+        .form-xs-8 {
+            margin: 47px 0 0 4%;
+            width: 80%;
+        }
+        .about, #contact, #about, .about-box{
+            width: 100%;
+        }
+        .text{
+            line-height: 25px;
+        }
+        .col-8, .col-4 {
+            margin: 3px auto 19px;
+            height: auto;
+        }
+        .navbar-brand {
+            font-size: 0.7em;
+        }
+        .col-xs-8{
+            float: none;
+            margin: 20px auto;
+        }
+        #filter{
+            display: none;
+        }
+        .bold-text{
+            font-size: 3.5em;
+        }
+        .last-content{
+            padding: 8% 0 0;
+        }
+        .resume {
+            margin: 44px 0;
+            padding: 0 20px;
+        }
+        .resume h3{
+            font-size: 1.2em;
+        }
+        .col-xs-8 {
+            padding: 0 0 10px 0;
+        }
+        .form-xs-8{
+            float:none; 
+            clear:both;
+        }
+    }
+
+    @media only screen and (max-width:500px) {
+        #header-headlines span {
+            font-size: 0.3em;
+        }
+        #header-headlines p {
+            font-size: 0.2em;
+        }
+        .icons-bottom, .footer2{
+            margin: 3px 4%;
+
+        }
+        .text2,.resume p{
+            text-align: left;
+            font-size: 1.2em;
+            margin: 20px 0 0 20px;
+        }
+        
+        .icons2 icon {
+            font-size: 1.2em;
+            bottom: -52px;
+            left: -43px;
+        }
+        .icons2 {
+            height: 32px;
+            left: -19px;
+            width: 32px;
+        }
+        .col-8 a {
+           margin: 3%;
+        }
+
+        .col-xs-8{
+            margin:0;
+       }
+
+    }
 
 
 
