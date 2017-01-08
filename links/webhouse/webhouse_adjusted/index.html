@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200' rel='stylesheet' type='text/css'>
+    <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.3.0.0.min.js"></script>
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <script src="js/responsiveslides.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <meta name="viewport" content="width=device-width">
+
+    <title>Webhouse</title>
+</head>
+<body>
+<div class="header-wrapper">
+    <div class="sticky" >
+        <div class="container header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid" >
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="images/logo-white.png" alt=""></a>
+                        <a class="navbar-brand-mobile" href="#"><img src="images/logo-blue.png" alt=""></a>
+                    </div>
+                    <ul class="plang-wrapper-div">
+                        <li class="plang-wrapper">
+                            <a class="lang" href="#">Ru</a>
+                            <a class="lang" href="#">Ro</a>
+                            <a class="lang" href="#">En</a>
+                        </li>
+                    </ul>
+                    <div class="device">
+                        <div class="device__screen">
+                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                                <svg width="1000px" height="1000px">
+                                    <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                    <path id="pathB" d="M 300 500 L 700 500"></path>
+                                    <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                </svg>
+                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div>
+                            <div id="dummy" class="dummy">
+                                <div class="dummy__item"><a href="#home">Home</a></div>
+                                <div class="dummy__item"><a href="#about">About Us</a></div>
+                                <div class="dummy__item"><a href="#portfolio">Portfolio</a></div>
+                                <div class="dummy__item"><a href="#service">Servicii</a></div>
+                                <div class="dummy__item"><a href="#contact">Contact</a></div>
+                                <div class="dummy__item"> <a href="#" class="phone">+373 60 84 30 20</a></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right" id="header">
+                            <li><a class="active" href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#service">Servicii</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="plang-wrapper">
+                                <a class="lang" href="#">Ru</a>
+                                <a class="lang" href="#">Ro</a>
+                                <a class="lang" href="#">En</a>
+                            </li>
+                            <li><a href="" class="phone">+373 60 84 30 20</a></li>
+                        </ul>
+                     </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+        <div class="inner-box-shadow" ></div>
+    </div>
+    <div id="home"></div>
+    <!--<div class="container header-container">
+            <div class="col-md-7 col-sm-8">
+                <h3>Mai buni decît noi sunt doar clienții noștri !</h3>
+            </div>
+            <div class="col-md-5 col-sm-4">
+                <img src="images/phone.png" alt="">
+                <p></p>
+            </div>
+           <div class="clearfix"></div>
+    </div>-->
+</div>
+<div id="wrapper">
+    <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            <li>
+                <div class="heading-wrapper">
+                    <h3 class="caption">Mai buni decît noi sunt doar clienții noștri !</h3>
+                </div>
+            </li>
+            <li>
+                <h3 class="caption">It is a long established fact that a reader</h3>
+            </li>
+            <li>
+                <h3 class="caption">Many desktop publishing packages</h3>
+            </li>
+        </ul>
+    </div>
+    <div class="scroll-bottom">
+        <img src="images/scroll.png" alt="">
+    </div>
+</div>
+<div class="main-container development" id="service">
+    <div class="main-content">
+        <h4 class="heading">Cu ce ne ocupam?</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor</p>
+        <div class="container">
+            <div class="col-sm-6 col-md-3">
+                <a class="awesome-icon-wrapper" href="">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </a>
+                <h5><a href="">Брендинг и дизайн</a></h5>
+                <p><a href="">Процесс создания бренда достаточно сложен.
+                    Именно поэтому лучше доверить это важный процесс компании-профессионалу в этой области. </a></p>
+                <a class="order" href="">COMANDA ACUM</a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a class="awesome-icon-wrapper" href="">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                </a>
+                <h5><a href="">Маркетинг и реклама</a></h5>
+                <p><a href="">Для нас маркетинг - это покупатели, которые возвращаются, и покупки, которые не возвращают.</a></p>
+                <a class="order" href="">COMANDA ACUM</a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a class="awesome-icon-wrapper" href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+                <h5><a href="">Веб разработка</a></h5>
+                <p><a href="">Мы создаем мощные инструменты для вашего бизнеса </a></p>
+                <a class="order" href="">COMANDA ACUM</a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a class="awesome-icon-wrapper" href=""><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+                <h5><a href="">Наш блог</a></h5>
+                <p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </a></p>
+                <a class="order" href="">COMANDA ACUM</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-container portfolio" id="portfolio">
+    <div class="main-content">
+        <h4 class="heading">PORTOFOLIO</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor</p>
+        <div class="hex-container">
+            <div class="hex hex-gap">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex ">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex hex-gap-mobile">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex hex-gap hex-no-gap-mobile">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex hex-gap-mobile">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="hex hex-gap-mobile-last">
+                <div class="inner">
+                    <h4 class="animated">HOME</h4>
+                    <hr />
+                    <p class="animated">Home Sweet Home</p>
+                </div>
+                <a href="#"></a>
+                <div class="corner-1"></div>
+                <div class="corner-2"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="statictics order-statistics">
+    <div class="container">
+        <div class="col-md-8">
+            <h3>Ridicarea vânzărilor prin <span class="sans-bold">crearea și promovare</span> website-ului,
+                atragem clienti noi in <span class="sans-bold">afacerea dvs</span>, precum și întoarcem pe cei vechi!
+            </h3>
+        </div>
+        <div class="col-md-4">
+            <h2>Get </h2>
+            <button class="popup-form-trigger">Marketing kit</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container-form">
+        <div class="close">
+        </div>
+        <h2>Vertical (basic) form</h2>
+        <form method="post" action="#">
+            <div class="group">
+                <input type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Company name</label>
+            </div>
+            <div class="group">
+                <input type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Contact name</label>
+            </div>
+            <div class="group">
+                <input type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Phone number</label>
+            </div>
+            <div class="group">
+                <input type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>E-mail</label>
+            </div>
+            <button type="submit" class="btn btn-default ">Get Marketing Kit</button>
+            <div class="error">
+                <p class="valid-email">Please enter valid email!</p>
+                <p class="valid-phone">Please enter valid phone number!</p>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="main-container team" id="about">
+    <div class="main-content">
+        <h4 class="heading">our team</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor</p>
+        <div class="container">
+            <div class="team-image-wrapper">
+                <img src="images/team/image4.jpg" alt="">
+                <div class="team-inner">
+                    <a href=""></a>
+                    <h4 class="heading">Elena Jeru</h4>
+                    <p>Front-end developer</p>
+                </div>
+            </div>
+            <div class="team-image-wrapper">
+                <img src="images/team/image1.png" alt="">
+                <div class="team-inner">
+                    <a href=""></a>
+                    <h4 class="heading">Anton Lapin</h4>
+                    <p>Front-end developer</p>
+                </div>
+            </div>
+            <div class="team-image-wrapper">
+                <img src="images/team/image2.png" alt="">
+                <div class="team-inner">
+                    <a href=""></a>
+                    <h4 class="heading">Radu Luca</h4>
+                    <p>Senior programmer</p>
+                </div>
+            </div>
+            <div class="team-image-wrapper">
+                <img src="images/team/image3.png" alt="">
+                <div class="team-inner">
+                    <a href=""></a>
+                    <h4 class="heading">Victor Molodoi</h4>
+                    <p>Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-container about-us" id="about-us">
+    <div class="main-content">
+        <h4 class="heading">Cu ce ne ocupam?</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor</p>
+        <div class="container">
+            <div class="col-sm-6 col-md-4">
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-crop" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-magic" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="hidden-sm col-md-4 ">
+                <img src="images/device-picture.png" alt="" class="about-device-picture">
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-cube" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-block">
+                    <div class="about-icon-wrapper animated">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Clean and Responsive</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Amet atque beatae blanditiis deleniti, eos exercitationem ipsam labore obcaecati possimus quae.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="statictics">
+    <div class="container">
+        <div class="col-md-3 col-sm-6">
+            <h3><span>99</span>%</h3>
+            <p>Successfull Cases</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3><span>2100</span></h3>
+            <p>Trusted Client</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3><span>88</span>%</h3>
+            <p>Recovered for clients</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3><span>1977</span></h3>
+            <p>cases Closed</p>
+        </div>
+    </div>
+</div>
+<div class="video-container">
+    <div class="video-container-colored"></div>
+    <video loop="" muted="" id="video">
+        <source src="http://video.wixstatic.com/video/7d8b10_aa5382834c7c4af18ad8c965476456ac/720p/mp4/file.mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="video-info">
+        <img src="images/video-button.png" alt="">
+        <p>Watch the feature video</p>
+    </div>
+</div>
+<div class="order-now">
+    <div class="container">
+        <div class="col-md-8">
+            <h3>Ridicarea vânzărilor prin <span class="sans-bold">crearea și promovare</span> website-ului,
+                atragem clienti noi in <span class="sans-bold">afacerea dvs</span>, precum și întoarcem pe cei vechi!
+            </h3>
+        </div>
+        <div class="col-md-4">
+            <h2>Nu amina </h2>
+            <a href="">COMANDA ACUM</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div id="map">
+
+</div>
+
+<div class="footer" id="contact">
+    <a class="map-order" href=""><img src="images/find-offices.png" alt="">found 45 offices</a>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-1 col-sm-hidden"></div>
+            <div class="col-md-3">
+                <p>+373 60 84 30 20<br/>
+                    Oficiul nostru:<br/>
+                    Str: Miron Costin 17/2<br/>
+                    et.5 / of. 509
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/footer-logo.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <p>contttact@webhouse.md</p>
+            </div>
+            <div class="col-md-1 col-sm-hidden"></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/segment.min.js"></script>
+<script src="js/ease.min.js"></script>
+<script src="js/index.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/countUp.js"></script>
+<script src="js/main.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6kZxz6O0KZCWXNWPfHVyrRi_2CPWljOo"></script>
+
+</body>
+</html>
