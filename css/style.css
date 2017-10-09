@@ -37,7 +37,7 @@ body{
 	min-width: 280px;
 	box-shadow:0 4px 10px rgba(0,0,0,0.5);
 	position: relative;
-	background-color: white;
+	background-color: #f5f5f5;
 	border-radius: 4px;
 	behavior: url("pie/PIE.htc");
 }
@@ -100,12 +100,12 @@ body{
 	background-image: url("../images/inner-header.jpg");
     background-size: 100% 100%;
     border-radius: 3px;
-    height: 180px;
-    margin: 0 0 0 -6px;
-    padding: 1px;
-    width: 101%;
+    margin: 0;
+    padding: 1px 1px;
+    width: 100%;
     position: relative;
     -ms-behavior: url("background/backgroundsize.min.htc");
+	min-height: 100px;
 }
 .menu{
 	padding: 3%;
@@ -116,7 +116,7 @@ body{
     font: 38px Georgia,serif;
     letter-spacing: 2px;
     text-shadow: 0 3px 3px #494949;
-    margin: 54px 0 20px;
+    margin: 34px 0 20px;
     text-align: center;
     font-size: 1.6em;
 }
@@ -128,37 +128,18 @@ body{
     max-width: 1200px;
 }
 
-.about p{
+.portfolio-page .about p{
 	position: relative;
 	font-size: 1.4em;
-	color: #636363;
 	font-family: Helvetica,Arial,sans-serif;
-	padding: 36px 27px 16px;
+	padding: 16px 27px;
 	text-align: center;
 	color: #525252;
-	background-color: white;
 	width: 50%;
 	margin:1px auto;
-	background-size: 200% 200%;
-	z-index: 0;
-	zoom:1;
-	border-radius: 160px 160px 0 0;
-	-webkit-border-radius:4px;
-	-moz-border-radius: 4px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	border-top-right-radius: 70% 91px;
-	border-top-left-radius: 70% 91px;
-	-webkit-border-top-right-radius: 70% 91px;
-	-webkit-border-top-left-radius: 70% 91px;
-	-o-border-top-right-radius: 70% 91px;
-	-o-border-top-left-radius: 70% 91px;
-	-moz-border-top-right-radius: 70% 91px;
-	-moz-border-top-left-radius: 70% 91px;
-	-khtml-moz-border-top-left-radius: 70% 91px;
-	behavior: url("pie/PIE.htc");
-	/*box-shadow: -6px -7px 1px 0 #3c3c3c;*/
-    background-color: #f5f5f5;
+	background: #fff;
+	border-radius: 70px;
+	margin-bottom: 20px;
 }
 .about.contact p{
     padding-bottom: 33px;
@@ -457,9 +438,6 @@ p.mrg{
         		width: 100%;
         	}
         	
-        	.about{
-        		height: 180px;
-        	}
 
         	.about p{
         		width: 100%;
@@ -581,7 +559,7 @@ p.mrg{
             font-size: 1em;
         	}
         	.about h3 {
-        		font-size: 1.3em;
+        		font-size: 1em;
         	}
         	.about p{
         		width: 80%;
