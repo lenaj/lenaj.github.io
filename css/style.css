@@ -351,7 +351,9 @@ li a.google{
     font-family: sans-serif;
 	line-height: 1.4em;
 	font-size: 16px;
-
+}
+.about-page .main-content p{
+	margin: 15px 5%;
 }
 .main-content img{
 	float: right;
@@ -390,7 +392,6 @@ p.mrg{
 .work-example{
     position: relative;
 }
-
 .details{
     width: 102%;
     height: 89%;
@@ -406,20 +407,20 @@ p.mrg{
     transition-property: all;
     transition-timing-function: ease-in-out;
     box-sizing:border-box;
-    
 }
 .ex:hover .details{
     opacity: 1;
-    
     transition-duration: 0.4s;
     transition-property: all;
     transition-timing-function: ease-in-out;
     z-index: 2000;
     height: 83%;
     width: 99%;
-
 }
-
+.contact-page .social-profiles{
+	text-align: center;
+	margin: auto;
+}
         @media only screen and (min-width:980px) {
             
         }
